@@ -1,13 +1,18 @@
-package quizful;
+package quizful.quiz1;
 
+/**
+ * Скомпилируется ли следующий код и если да, то что будет выведено на экран?
+ */
 public class Quiz1 {
-    public static void main(String ... args) {
+    public static void main(String... args) {
         Boolean b = new Boolean("/true");
         System.out.println(b); //false because parseBoolean checks ignore case 'true'
         main("test");
     }
 
-    //Can't be more than 1 main class
+    /**
+     * Can't be more than 1 main class
+     */
 /*    public static void main(String[] args) {
         Boolean b = new Boolean("/true");
         System.out.println(b);
