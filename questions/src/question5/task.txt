@@ -1,0 +1,2 @@
+1. Upload test.log file to 192.168.20.2 vagrant:vagrant to /var/log/
+2.

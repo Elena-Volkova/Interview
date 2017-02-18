@@ -1,0 +1,7 @@
+1. Check operation system: uname -a
+2. Upload file: WinSCP
+3. Copy file: sudo cp /home/vagrant/test.log /var/log/
+4. View file:
+less /var/log/test.log
+tail -n 1000 /var/log/test.log
+nano /var/log/test.log
