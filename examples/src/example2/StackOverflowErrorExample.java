@@ -1,4 +1,4 @@
-package other;
+package example2;
 
 /**
  * How to deal with the StackOverflowError
