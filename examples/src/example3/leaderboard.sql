@@ -32,3 +32,14 @@ SELECT h.hacker_id, h.name, TEMP.total_score
             HAVING SUM(max_score) > 0) TEMP --exclude 0 results
     ON h.hacker_id = TEMP.hacker_id
     ORDER BY TEMP.total_score DESC, h.hacker_id ASC; --order by total score then by id
+
+SELECT hacker_id, name, SUM(max_score) total_score --select sum of max scores
+    FROM (
+        SELECT hacker_id as h_id, challenge_id, MAX(score) max_score --select by max score
+        FROM Submissions
+        GROUP BY hacker_id, challenge_id)
+    INNER JOIN Hackers
+        ON h_id = hacker_id
+    GROUP BY hacker_id, name
+    HAVING SUM(max_score) > 0 --exclude 0 results
+    ORDER BY SUM(max_score) DESC, hacker_id ASC; --order by total score then by id
