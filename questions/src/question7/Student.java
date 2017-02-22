@@ -6,7 +6,7 @@ public class Student {
 
     private String name;
 
-    private List<Books> books;
+    private List<Book> books;
 
     private Student(Builder builder) {
         name = builder.name;
@@ -21,13 +21,13 @@ public class Student {
         return name;
     }
 
-    public List<Books> getBooks() {
+    public List<Book> getBooks() {
         return books;
     }
 
     public static final class Builder {
         private String name;
-        private List<Books> books;
+        private List<Book> books;
 
         private Builder() {
         }
@@ -37,7 +37,7 @@ public class Student {
             return this;
         }
 
-        public Builder withBooks(List<Books> val) {
+        public Builder withBooks(List<Book> val) {
             books = val;
             return this;
         }

@@ -1,12 +1,10 @@
 package question7;
 
-import java.util.Objects;
-
-public class Books {
+public class Book {
 
     private String bookName;
 
-    private Books(Builder builder) {
+    private Book(Builder builder) {
         bookName = builder.bookName;
     }
 
@@ -29,8 +27,8 @@ public class Books {
             return this;
         }
 
-        public Books build() {
-            return new Books(this);
+        public Book build() {
+            return new Book(this);
         }
     }
 }

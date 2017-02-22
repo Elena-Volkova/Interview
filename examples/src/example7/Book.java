@@ -1,13 +1,12 @@
 package example7;
 
-import java.time.LocalDate;
 import java.util.Objects;
 
-public class Books {
+public class Book {
 
     private String bookName;
 
-    private Books(Builder builder) {
+    private Book(Builder builder) {
         bookName = builder.bookName;
     }
 
@@ -30,8 +29,8 @@ public class Books {
             return this;
         }
 
-        public Books build() {
-            return new Books(this);
+        public Book build() {
+            return new Book(this);
         }
     }
 
@@ -39,8 +38,8 @@ public class Books {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Books books = (Books) o;
-        return Objects.equals(bookName, books.bookName);
+        Book book = (Book) o;
+        return Objects.equals(bookName, book.bookName);
     }
 
     @Override
@@ -50,7 +49,7 @@ public class Books {
 
     @Override
     public String toString() {
-        return "Books{" +
+        return "Book{" +
                 "bookName='" + bookName + '\'' +
                 '}';
     }

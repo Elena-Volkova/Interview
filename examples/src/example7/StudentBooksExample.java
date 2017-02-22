@@ -27,13 +27,13 @@ public class StudentBooksExample {
         students.add(Student.newBuilder()
                 .withName("Student_1")
                 .withBooks(Arrays.asList(
-                        Books.newBuilder()
+                        Book.newBuilder()
                                 .withBookName("Thinking in Java")
                                 .build(),
-                        Books.newBuilder()
+                        Book.newBuilder()
                                 .withBookName("Introduction to Java")
                                 .build(),
-                        Books.newBuilder()
+                        Book.newBuilder()
                                 .withBookName("Java How To Program")
                                 .build()
                 ))
@@ -42,13 +42,13 @@ public class StudentBooksExample {
         students.add(Student.newBuilder()
                 .withName("Student_2")
                 .withBooks(Arrays.asList(
-                        Books.newBuilder()
+                        Book.newBuilder()
                                 .withBookName("Thinking in Java")
                                 .build(),
-                        Books.newBuilder()
+                        Book.newBuilder()
                                 .withBookName("Some Famous book")
                                 .build(),
-                        Books.newBuilder()
+                        Book.newBuilder()
                                 .withBookName("Java How To Program")
                                 .build()
                 ))
@@ -57,13 +57,13 @@ public class StudentBooksExample {
         students.add(Student.newBuilder()
                 .withName("Student_3")
                 .withBooks(Arrays.asList(
-                        Books.newBuilder()
+                        Book.newBuilder()
                                 .withBookName("Thinking in Java")
                                 .build(),
-                        Books.newBuilder()
+                        Book.newBuilder()
                                 .withBookName("Introduction to Java")
                                 .build(),
-                        Books.newBuilder()
+                        Book.newBuilder()
                                 .withBookName("Effective Java")
                                 .build()
                 ))
